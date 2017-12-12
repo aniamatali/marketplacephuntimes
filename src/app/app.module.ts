@@ -9,13 +9,13 @@ import { routing } from './app.routing';
 import { PipeNamePipe } from './pipe-name.pipe';
 import { AboutComponent } from './about/about.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
-import { AlbumDetailComponent } from './album-detail/album-detail.component';
+import { AdvertisementDetailComponent } from './advertisement-detail/advertisement-detail.component';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AdminComponent } from './admin/admin.component';
-import { EditAlbumComponent } from './edit-album/edit-album.component';
+import { EditAdvertisementComponent } from './edit-advertisement/edit-advertisement.component';
 
 
 export const firebaseConfig = {
@@ -32,9 +32,9 @@ export const firebaseConfig = {
     PipeNamePipe,
     AboutComponent,
     MarketplaceComponent,
-    AlbumDetailComponent,
+    AdvertisementDetailComponent,
     AdminComponent,
-    EditAlbumComponent
+    EditAdvertisementComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,12 @@
+<h4>Edit advertisement</h4>
+<label>New advertisement Title:</label>
+<input [(ngModel)]="selectedadvertisement.title">
+<br>
+<label>New advertisement Author:</label>
+<input [(ngModel)]="selectedadvertisement.author">
+<br>
+<label>New advertisement Description:</label>
+<input [(ngModel)]="selectedadvertisement.description">
+<button (click)="beginUpdatingadvertisement(selectedadvertisement)">Update</button>
+<hr>
+<button (click)="beginDeletingadvertisement(selectedadvertisement)">Delete</button>

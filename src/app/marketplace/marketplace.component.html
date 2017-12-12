@@ -1,12 +1,12 @@
 <h2>Marketplace</h2>
 
-<div *ngFor="let album of albums | async"  class="panel panel-default">
+<div *ngFor="let advertisement of advertisements | async"  class="panel panel-default">
   <div class="panel-body">
-    <h3 (click)="goToDetailPage(album)"><em>{{album.title}}</em> by {{album.artist}}</h3>
+    <h3 (click)="goToDetailPage(advertisement)"><em>{{advertisement.title}}</em> by {{advertisement.author}}</h3>
     <div *ngIf="currentRoute === '/admin'">
-      {{album.description}}
+      {{advertisement.description}}
       <hr>
-      <app-edit-album [selectedAlbum]="album"></app-edit-album>
+      <app-edit-advertisement [selectedAdvertisement]="advertisement"></app-edit-advertisement>
     </div>
   </div>
 </div>
